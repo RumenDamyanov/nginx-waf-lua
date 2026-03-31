@@ -1,0 +1,29 @@
+# Build/test artifacts
+t/servroot/
+*.t.bak
+
+# Development directories
+.development/
+.obs/
+
+# Editor files
+.vscode/
+.cursor/
+.cursorrules
+.idea/
+.ai/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+._*
+Thumbs.db
+
+# Package artifacts
+*.rpm
+*.deb
+*.tar.gz
+*.tar.xz
+*.rock
