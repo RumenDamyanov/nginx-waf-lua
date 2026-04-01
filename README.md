@@ -2,14 +2,12 @@
 
 OpenResty/Lua integration library for nginx-waf.
 
-> **PLANNED PROJECT** - This project is scaffolded and ready for implementation.
-
 ## Overview
 
 nginx-waf-lua provides a Lua library for OpenResty that reads nginx-waf IP list
 files, provides fast IP lookups, custom block responses, and runtime list management.
 
-## Features (Planned)
+## Features
 
 - Read nginx-waf IP list files
 - Fast IP matching (IPv4/IPv6 + CIDR)
@@ -38,7 +36,7 @@ access_by_lua_block {
 }
 ```
 
-## API (Planned)
+## API
 
 ```lua
 local waf = require("resty.waf")
@@ -72,10 +70,18 @@ luarocks install nginx-waf-lua
 
 ## Related Projects
 
+### nginx-waf Ecosystem
+
 - [nginx-waf](https://github.com/RumenDamyanov/nginx-waf) - Core nginx module (required)
 - [nginx-waf-api](https://github.com/RumenDamyanov/nginx-waf-api) - REST API for list management
 - [nginx-waf-feeds](https://github.com/RumenDamyanov/nginx-waf-feeds) - Threat feed updater
 - [nginx-waf-ui](https://github.com/RumenDamyanov/nginx-waf-ui) - Web management interface
+
+### Other Nginx Modules
+
+- [nginx-torblocker](https://github.com/RumenDamyanov/nginx-torblocker) - Control access from Tor exit nodes
+- [nginx-cf-realip](https://github.com/RumenDamyanov/nginx-cf-realip) - Automatic Cloudflare IP list fetcher for real client IP restoration
+- [nginx-gone](https://github.com/RumenDamyanov/nginx-gone) - Return HTTP 410 Gone for permanently removed URIs
 
 ## License
 
